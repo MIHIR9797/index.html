@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To My Beautiful Wife</title>
+    <title>Happy Birthday My Wifeyyy! 🥺💗</title>
     <style>
         :root {
             --primary-pink: #ff7597;
@@ -50,6 +50,11 @@
         .lock-box h2 {
             margin-top: 0;
             font-size: 1.8rem;
+            color: var(--dark-pink);
+        }
+
+        .lock-box h2::after {
+            content: none; /* Removes heart for the login box */
         }
 
         .lock-box input {
@@ -68,6 +73,21 @@
             border-color: var(--primary-pink);
         }
 
+        .lock-box button {
+            background-color: var(--primary-pink);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .lock-box button:hover {
+            background-color: var(--dark-pink);
+        }
+
         #error-msg {
             color: var(--dark-pink);
             font-size: 0.9rem;
@@ -78,13 +98,14 @@
         /* Main Content (Hidden until unlocked) */
         #main-content {
             opacity: 0;
+            display: none;
             transition: opacity 1s ease;
         }
 
         /* Hero Section */
         header {
             height: 80vh;
-            background: linear-gradient(rgba(255, 117, 151, 0.4), rgba(255, 117, 151, 0.2)), 
+            background: linear-gradient(rgba(255, 117, 151, 0.5), rgba(255, 117, 151, 0.3)), 
                         url('couple-bg.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
@@ -92,13 +113,14 @@
             align-items: center;
             text-align: center;
             color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
             padding: 20px;
         }
 
         header h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
+            line-height: 1.2;
         }
 
         header p {
@@ -108,7 +130,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -128,10 +150,23 @@
             margin-top: 5px;
         }
 
+        /* Love Letter Style */
+        .love-letter {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(224, 82, 117, 0.1);
+            line-height: 1.8;
+            font-size: 1.15rem;
+            white-space: pre-line; /* Keeps line breaks from your prompt */
+            margin-bottom: 60px;
+            border-left: 5px solid var(--primary-pink);
+        }
+
         /* Gallery Grid */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-bottom: 60px;
         }
@@ -151,7 +186,7 @@
 
         .photo-card img {
             width: 100%;
-            height: 300px;
+            height: 250px;
             object-fit: cover;
             border-radius: 4px;
         }
@@ -191,160 +226,122 @@
         .timeline-date {
             font-weight: bold;
             color: var(--dark-pink);
+            margin-bottom: 5px;
         }
-
-        /* Surprise Section */
-        .surprise-box {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .btn {
-            background-color: var(--dark-pink);
-            color: white;
-            border: none;
-            padding: 15px 35px;
-            font-size: 1.2rem;
-            border-radius: 30px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(224, 82, 117, 0.4);
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #c43b5c;
-            transform: translateY(-2px);
-        }
-
-        .love-letter {
-            display: none;
-            background: #fffdf9;
-            border-left: 5px solid var(--primary-pink);
-            padding: 30px;
-            margin-top: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: left;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
+        
         footer {
             text-align: center;
-            padding: 40px;
-            color: #999;
+            padding: 30px;
+            color: #888;
             font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+    <!-- Password Overlay Screen -->
     <div id="password-screen">
         <div class="lock-box">
-            <h2>Enter Secret Code 🌹</h2>
-            <input type="password" id="password-input" placeholder="Type password here...">
+            <h2>Enter Password 🔑</h2>
+            <p style="font-size: 0.9rem; color:#888; margin-bottom: 15px;">Hint: A special date or phrase only we know!</p>
+            <input type="password" id="password-input" placeholder="Password..." onkeypress="handleKeyPress(event)">
             <div id="error-msg"></div>
-            <button class="btn" onclick="checkPassword()">Unlock</button>
+            <button onclick="checkPassword()">Unlock</button>
         </div>
     </div>
 
+    <!-- Main Content -->
     <div id="main-content">
         <header>
-            <h1>Happy Special Day, My Love!</h1>
-            <p>To the most beautiful woman in the world, inside and out.</p>
+            <h1>Happy birthday my wifeyyy! 🥺💗</h1>
+            <p>To the most beautiful person in my life 🙂😭</p>
         </header>
 
         <div class="container">
-            <h2>Beautiful Memories</h2>
-            <div class="gallery">
-                <div class="photo-card">
-                    <img src="wife1.jpg" alt="My Beautiful Wife">
-                    <p>Your smile lights up my whole world.</p>
-                </div>
-                <div class="photo-card">
-                    <img src="couple1.jpg" alt="Our Moment">
-                    <p>One of my absolute favorite days with you.</p>
-                </div>
-                <div class="photo-card">
-                    <img src="couple2.jpg" alt="Another Memory">
-                    <p>Forever looks incredibly good with you.</p>
-                </div>
+            
+            <h2>A Message For You</h2>
+            <div class="love-letter">
+My dear wifey,
+
+I wanted to make something unique to express how much I love you. It took a lott of time but it's definitely worth it if you are happy 👉🏻👈🏻 
+
+Words truly fail to describe how much I love you so I built this little corner of the internet just for us..
+
+Thank you for being mine, supporting me, loving me. You are my best friend, my wifeyy, my soulmate, my everything.. You are the most precious thing of my life..
+
+Forever and always yourss,
+<strong>Mihirrr from your heartt 💋</strong>
             </div>
 
             <h2>Our Beautiful Journey</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">The Day We Met</div>
-                    <p>The moment my life changed for the better. I still remember what you wore and how nervous I was!</p>
+                    <p>Where our incredible story first started...</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">Our Wedding Day</div>
-                    <p>The easiest 'Yes' of my life. Walking alongside you as your husband is my greatest honor.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Right Now & Forever</div>
-                    <p>Every single day, I love you more than the day before. Thank you for being my rock and my home.</p>
+                    <div class="timeline-date">Our Wedding Day (Coming Very Soon In Sha Allah) 💝</div>
+                    <p>Our wedding day wish will change into reality very soon in sha Allah, and it would be the best day of my life!</p>
                 </div>
             </div>
 
-            <div class="surprise-box">
-                <h2>A Little Message For You</h2>
-                <button class="btn" id="reveal-btn">Click to Open Your Letter</button>
-                
-                <div class="love-letter" id="love-letter">
-                    <p>My Dearest,</p>
-                    <p>I wanted to make something unique just to tell you how incredibly special you are to me. Words truly fail to describe how much I love you, so I built this little corner of the internet just for us.</p>
-                    <p>Thank you for your kindness, your endless support, and the love you pour into my life every single day. You are my best friend, my soulmate, and my favorite adventure.</p>
-                    <p>Forever and always Yours,</p>
-                    <p><strong>[Your Name]</strong></p>
+            <h2>Our Precious Memories</h2>
+            <div class="gallery">
+                <!-- Replace 'photo1.jpg' etc. with your own images or links -->
+                <div class="photo-card">
+                    <img src="photo1.jpg" alt="Memory 1">
+                    <p>A beautiful moment with you</p>
+                </div>
+                <div class="photo-card">
+                    <img src="photo2.jpg" alt="Memory 2">
+                    <p>Forever laughing together</p>
+                </div>
+                <div class="photo-card">
+                    <img src="photo3.jpg" alt="Memory 3">
+                    <p>My absolute favorite view</p>
                 </div>
             </div>
+
         </div>
 
         <footer>
-            <p>Made with ❤️ by [Your Name] | 2026</p>
+            Made with ❤️ by Mihir
         </footer>
     </div>
 
     <script>
-        function checkPassword() {
-            const input = document.getElementById('password-input').value;
-            const errorMsg = document.getElementById('error-msg');
-            const lockScreen = document.getElementById('password-screen');
-            const mainContent = document.getElementById('main-content');
+        // Set your secret password here!
+        const SECRET_PASSWORD = "2506"; 
 
-            // Password is set to 2506
-            if (input === "2506") {
-                lockScreen.style.opacity = '0';
-                lockScreen.style.visibility = 'hidden';
-                mainContent.style.opacity = '1';
-                document.body.style.overflow = 'auto'; // Enable scrolling
+        function checkPassword() {
+            const userInput = document.getElementById("password-input").value;
+            const errorMsg = document.getElementById("error-msg");
+            const lockScreen = document.getElementById("password-screen");
+            const mainContent = document.getElementById("main-content");
+
+            if (userInput === SECRET_PASSWORD) {
+                // Hide lock screen smoothly
+                lockScreen.style.opacity = "0";
+                setTimeout(() => {
+                    lockScreen.style.display = "none";
+                    // Reveal main content smoothly
+                    mainContent.style.display = "block";
+                    setTimeout(() => {
+                        mainContent.style.opacity = "1";
+                        document.body.style.overflow = "auto"; // Unlock scrolling
+                    }, 50);
+                }, 800);
             } else {
-                errorMsg.innerText = "Wrong password, my love! Try again 😉";
+                errorMsg.innerText = "Incorrect password, try again my love! ❌";
+                document.getElementById("password-input").value = "";
             }
         }
 
-        // Allow pressing 'Enter' key to unlock
-        document.getElementById('password-input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
                 checkPassword();
             }
-        });
-
-        // Love Letter Toggle Button
-        const btn = document.getElementById('reveal-btn');
-        const letter = document.getElementById('love-letter');
-
-        btn.addEventListener('click', () => {
-            if (letter.style.display === 'none' || letter.style.display === '') {
-                letter.style.display = 'block';
-                btn.innerText = 'Close Letter';
-                letter.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                letter.style.display = 'none';
-                btn.innerText = 'Click to Open Your Letter';
-            }
-        });
+        }
     </script>
 </body>
 </html>
