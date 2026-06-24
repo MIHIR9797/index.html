@@ -289,5 +289,46 @@ Forever and always yourss,
             <h2>Our Precious Memories</h2>
             <div class="gallery">
                 <div class="photo-card">
-                    <img src="data:image/jpeg;base64,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
-                    
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAgICAQDAgQECwsIDQ0NCA0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ3/2wBDAQ0LCw0ODRIODhINDg4OEhINDhISEhINDhISEhINDhISEhINDhISEhINDhISEhINDhISEhINDhISEhINDhISEhL/wAARCAH0A7IDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZnaGlqc3R1dnd4eXqGg4SFhoeIiYqSk5SVl5YEMjY0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVl5YGR4hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vExYGHiImKi4yNjoCFiJWElQCFiY2Sk5SVlpeYmZqadnaGlqc3R1dnd4eXqGg4SFhoeIiYqSk5SVl5YGR4hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oADAMBAAIRAxE6xlpSDR6/58UfXj8v86AFI6D3paTqRjH9KCP8OaBhinD3pnofX8v8KXoT09D2/GgCSgdc1GMZ5/T2pwJxnGOnHpigCXPGO1LUYx/nn6Uo6kfzoAlGe1KCPpTM8HGePrQM4H8+OnFAEuQTxTvrUKnPPrTgfzH1NAEuD607BwOP8KZnofX/Cl9Ppn8v8KAJOvU/yowB6U0D8BScDrg/Qen60ALwRkdfzozjr7e3/ANekoP6+2KAFI7Ggeuf8KQE56A/r6UvGMHmgBMZ9wPywKUfL7H9PrSc85znPr60D3yevIzz7UAODHGOuPTA9aepB9jUIxk+2PpTxnPPrQA/gH3oxx3qMfXP6UoOfpnp2PegBcnGO2fzpce9R7u/0Ape3OfT8PzoAcevUnHPrSjrgU3Prkn86XPvjjigBeBzz3PofpTuCcHpnP+NMGQMcnvzz607PXPPY+xoAeMdDyefrR6DP89PamLnjOfqOvpTx7fn/iaAHDB54Prnv9fWnjrkD39fxpgOfbn69vxpwwenp74/8... [truncated for space] ... 06f6ff3df8ff3df3ff8ff3f/9k=">
+                    <p>A beautiful memory...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('password-input').value.trim();
+            const errorMsg = document.getElementById('error-msg');
+            const passwordScreen = document.getElementById('password-screen');
+            const mainContent = document.getElementById('main-content');
+
+            // Setting 2506 as the official correct password
+            if (passwordInput === '2506') {
+                // Fade out password overlay
+                passwordScreen.style.opacity = '0';
+                passwordScreen.style.visibility = 'hidden';
+                
+                // Transition inside page elements smoothly
+                mainContent.style.display = 'block';
+                setTimeout(() => {
+                    mainContent.style.opacity = '1';
+                    document.body.style.overflow = 'auto'; // Restores vertical scrolling
+                }, 50);
+            } else {
+                errorMsg.innerText = 'Incorrect Password. Try again! 😢';
+                document.getElementById('password-input').value = '';
+            }
+        }
+
+        // Listens for keyboard actions
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                checkPassword();
+            }
+        }
+    </script>
+</body>
+</html>
+
